@@ -36,7 +36,7 @@ $args = [
     "query_var" => true,
     "menu_position" => 7,
     "menu_icon" => "dashicons-portfolio",
-    "supports" => [ "title", "editor", "thumbnail", "custom-fields" ],
+    "supports" => [ "title", "thumbnail", "custom-fields" ],
     "show_in_graphql" => false,
 ];
 
