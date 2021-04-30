@@ -42,8 +42,10 @@ $args = [
 
 register_post_type( "work_sample", $args );
 }
-
 add_action( 'init', 'cptui_register_my_cpts' );
 
-
+function brians_theme_scripts(){
+    wp_enqueue_style('main-styles', get_template_directory_uri() . '/style.css', array(), false);
+}
+add_action('wp_enqueue_scripts', 'brians_theme_scripts');
 ?>
