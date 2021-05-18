@@ -1,3 +1,3 @@
-# brian-s-theme
+# Portfolio-theme
 
 Wordpress website built to showcase some of my work
