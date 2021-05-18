@@ -1,3 +1,3 @@
 # Portfolio-theme
 
-Wordpress website built to showcase some of my work
+Wordpress theme built to showcase some of my work
