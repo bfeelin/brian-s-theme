@@ -9,7 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"> 
     <?php wp_head(); ?>
-
+	<script>
+      window.onload = typeWriter;
+    </script>
 </head>
 
 <body <?php body_class(); ?>>
