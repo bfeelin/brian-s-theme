@@ -73,3 +73,46 @@ a{
 .navbar-container .navbar a:hover:after {
 	width: 100%;
 }
+
+.contact-container {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto
+}
+
+.contact-container .contact-links {
+	display: flex;
+	justify-content: space-around;
+	font-family: Ubuntu,Open Sans,Segoe UI,sans-serif;
+	font-size: 1.2em;
+	margin-top: 40px
+}
+
+@media (max-width: 767px) {
+	.contact-container .contact-links a{
+		padding-bottom: 15px;
+	}
+	.contact-container .contact-links{
+		font-size:1.3em;
+		align-items: center;
+	}
+	.contact-links {
+		flex-direction: column;
+		margin-top: 80px;
+		padding-bottom: 80px;
+	}
+	.divider {
+		display:none;
+	}
+}
+
+.contact-container .contact-links a {
+	position: relative;
+	text-decoration: none;
+	color: #525f7f;
+}
+
+.contact-container .contact-links a:hover {
+	color: #FD6585;
+}
+
