@@ -116,3 +116,38 @@ a{
 	color: #FD6585;
 }
 
+/* Forms
+--------------------------------------------- */
+@media (max-width: 767px) {
+	#name{
+		font-size:2em;
+	}
+}
+#name {
+    font-size: 3em;
+    font-family: Ubuntu;
+    font-weight: 600;
+    color: #FD6585;
+    display: flex;
+    align-content: flex-start;
+	justify-content: flex-start;
+}
+
+#name:after {
+  content: '';
+  width: 25px;
+  height: 55px;
+  background: #FD6585;
+  opacity: 0;
+  display: inline-block;
+  animation: blink 0.50s linear infinite alternate;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
