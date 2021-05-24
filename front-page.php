@@ -55,36 +55,41 @@
                                     $tech_used = get_field( 'tech_used', get_the_ID() ); 
                                     if( $tech_used ) : 
                                         ?>
-                                        <div class="project-stack d-flex flex-wrap justify-content-start mb-2">
+                                        <div class="project-stack d-flex flex-wrap justify-content-start mb-3">
                                             <?php foreach( $tech_used as $tech ): ?>
                                                 <span class="tech"><?php echo $tech; ?></span>
                                             <?php endforeach; ?>
                                         </div>
                                     <?php endif; ?>
-                                    <div class="d-flex flex-row justify-content-between mb-2">
+                                    <div class="d-flex flex-row justify-content-around">
                                         <?php 
                                         $live_url = get_field( 'live_url', get_the_ID() );
                                         if($live_url) : ?>
-                                            <a class="btn btn-primary" href="<?php echo $live_url ?>" role="button">
+                                            <a class="btn project-button" target="_blank" href="<?php echo $live_url ?>" role="button">
                                                 <i class="bi bi-globe2"></i>
-                                                Live Website
+                                                Website
                                             </a>
                                         <?php endif; ?>
                                         <?php 
-                                        $github_url = get_field( 'github_url', get_the_ID() ); 
-                                        if($github_url) : ?>
-                                            <a class="btn btn-primary" href="<?php echo $github_url ?>" role="button">
-                                                <i class="bi bi-github"></i>
-                                                Github
-                                            </a>
+						$github_url = get_field( 'github_url', get_the_ID() ); 
+						$private_repo = get_field( 'private_repo', get_the_ID() );
+						if($private_repo) : ?>
+						<div class="btn private-button">
+                                                	<i class="bi bi-code-slash"></i>
+                                                	Private
+                                            	</div>
+                                        <?php elseif($github_url) : ?>
+						<a class="btn project-button" target="_blank" href="<?php echo $github_url ?>" role="button">
+							<i class="bi bi-github"></i>
+							Github
+						</a>
                                         <?php endif; ?>
                                     </div>
                                 </div>
                             </div>
-                        </div>
                     <?php endwhile; ?>    
+			</div>
                 </div>   
             <?php } ?> 
-        </div>
     </main>
 <?php get_footer(); ?>
