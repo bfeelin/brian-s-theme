@@ -41,6 +41,11 @@
                                     if( $image ) : ?>
                                         <img class="project-img" src="<?php echo $image ?>"></img>
                                     <?php endif; ?>
+				<?php 
+					$gif = get_field( 'gif', get_the_ID() );
+					if( $gif ) : ?>
+						<img style="height:400px;" class="project-gif mx-auto d-block" src="<?php echo $gif ?>"></img>
+					<?php endif; ?>
                                 <div class="project-body p-3">
                                     <?php the_title( '<div class="project-title"><h3>', '</h3></div>' ); ?>
                                     <div class="project-desc mt-2">
