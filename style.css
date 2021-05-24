@@ -151,3 +151,57 @@ a{
     opacity: 1;
   }
 }
+
+h3.terminal {
+    font-family: Ubuntu;
+    font-weight: 500;
+    font-size: 1.3em;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+p.terminal {
+    font-family: Ubuntu;
+    font-weight: 300;
+    font-size: 1.3em;
+    color: #DACB7E;
+    margin-bottom: 40px;
+}
+
+a.terminal {
+    font-family: Ubuntu;
+    font-weight: 300;
+    font-size: 1.3em;
+    color: #35feff;
+    margin-bottom: 40px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/*--------------------------------------------------------------
+# Layouts
+--------------------------------------------------------------*/
+
+.terminal-container{
+	border-radius: 10px;
+}
+
+.terminal-header{
+	width: 100%;
+	height: 30px;
+	background-color: #E0DFE1;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	border-radius: 10px 10px 0 0;
+}
+
+.terminal-body{
+	background: linear-gradient(to right, #41295a, #41295a);
+	width: 100%;
+	height: inherit;
+	padding: 3em;
+	box-sizing: border-box;
+	margin-bottom: 50px;
+	box-shadow: 0 50px 100px rgba(50, 50, 93, .15), 0 15px 35px rgba(50, 50, 93, .2), 0 5px 15px rgba(0, 0, 0, .12);
+}
