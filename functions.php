@@ -44,8 +44,33 @@ register_post_type( "work_sample", $args );
 }
 add_action( 'init', 'cptui_register_my_cpts' );
 
-function brians_theme_scripts(){
-    wp_enqueue_style('main-styles', get_template_directory_uri() . '/style.css', array(), false);
+function brians_theme_scripts() {
+	wp_enqueue_style('main_styles', get_template_directory_uri() . '/style.css', array(), false);
+	wp_enqueue_script('my_scripts');
 }
-add_action('wp_enqueue_scripts', 'brians_theme_scripts');
+add_action('wp_enqueue_scripts', 'brians_theme_scripts');  
+
+add_action( 'after_setup_theme', function() {
+	add_theme_support( 'title-tag' );
+	remove_all_filters( 'wp_title' );
+	remove_all_filters( 'wpseo_title' );
+	remove_all_actions('wp_head', 'theme_slug_render_title');
+	add_filter( 'wp_title', 'sp_remove_title', 9999999999999, 2 );
+
+}, 99999999999999);
+
+function sp_remove_title( $title, $sep ) { 
+	return false;
+}
+
+add_action('wp_loaded', 'buffer_start');
+function buffer_start() { 
+	ob_start("sp_remove_empty_title");
+}
+
+function sp_remove_empty_title($buffer) {
+	$buffer = str_replace('<title></title>','',$buffer);
+	return $buffer;
+}
+
 ?>
