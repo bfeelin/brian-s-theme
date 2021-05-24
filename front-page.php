@@ -11,15 +11,16 @@
                     <div class="terminal-button green"></div>
                 </div>
                 <div class="terminal-body">
-                    <h3 class="terminal">Location</h3>
+                    <h3 class="terminal">> Location</h3>
                     <p class="terminal">"Jacksonville, FL"</p>
-                    <h3 class="terminal">Contact</h3>
-                    <a class="terminal" href="mailto:brianphelan59@gmail.com">brianphelan59@gmail.com</a>
-                    <h3 class="terminal">Skills</h3>
-                    <p class="terminal">["HTML", "CSS", "JAVASCRIPT", "PHP", "WORDPRESS"]</p>
-                    <h3 class="terminal">Education</h3>
-                    <p class="terminal mb-0">"Bachelor of Science in Computer Science. Received 2018 from University of North Florida"</p>
-                    <p class="terminal">"Graudated 2018, University of North Florida"</p>
+                    <h3 class="terminal">> Contact</h3>
+                    <a class="terminal" href="mailto:brianphelan59@gmail.com">"brianphelan59@gmail.com"</a>
+                    <h3 class="terminal">> Skills</h3>
+                    <p class="terminal">["PHP", "HTML", "CSS", "JavaScript", "WordPress"]</p>
+					<h3 class="terminal">> Interests</h3>
+                    <p class="terminal">["Golf", "Design", "Brewing"]</p>
+                    <h3 class="terminal">> Education</h3>
+                    <p class="terminal">"B.Sc. Computer Science - University of North Florida"</p>
                 </div>
             </div>
             <?php 
