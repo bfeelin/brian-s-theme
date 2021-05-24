@@ -236,3 +236,64 @@ a.terminal {
     display: block;
     content: "";
 }
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+.private-button{
+	color: #fff;
+	background-color: #41295a;
+	border-color: #41295a;
+	padding: .5rem 1rem;
+	font-size: 1.25rem;
+	line-height: 1.5;
+	border-radius: .3rem;
+}
+
+.project-button{
+    color: #fff;
+    background-color: #f6577a;
+    border-color: #f6577a;
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+}
+
+.project-button:hover{
+	opacity: 0.75;
+	color: white;
+}
+
+.terminal-button {
+    border-radius: 50%;
+    position: relative;
+    height: 13px;
+    width: 13px;
+    margin-left: 10px;
+}
+
+.red{
+	background-color: #F1544E;
+}
+
+.yellow{
+	background-color: #F8B340;
+}
+
+.green {
+    background-color: #40C44A;
+}
+
+.tech {
+    border-radius: 4px;
+    border: 2px solid #92eac0;
+    padding: 8px;
+    margin-right: 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family: Camphor, Open Sans, Segoe UI, sans-serif;
+    font-size: .85em;
+    color: #525f7f;
+}
