@@ -9,16 +9,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"> 
     <?php wp_head(); ?>
+
 </head>
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
-	<header id="masthead" class="site-header">
-        <div class="d-flex flex-md-row align-items-center justify-content-end p-3 px-md-4 mb-3 bg-white shadow-sm">
-            <nav class="my-2 my-md-0 mr-md-3">
-                <a class="p-2 text-dark" href="#projects">Projects</a>
-                <a class="p-2 text-dark" href="#contact">Contact</a>
+	<header id="masthead" class="container site-header">
+        <div class="navbar-container">
+            <nav class="navbar">
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
             </nav>
         </div>
 	</header><!-- #masthead -->  
