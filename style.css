@@ -205,3 +205,34 @@ a.terminal {
 	margin-bottom: 50px;
 	box-shadow: 0 50px 100px rgba(50, 50, 93, .15), 0 15px 35px rgba(50, 50, 93, .2), 0 5px 15px rgba(0, 0, 0, .12);
 }
+.project-card{
+	width: 100%;
+	box-sizing: border-box;
+	background-color: #ffffff;
+	box-shadow: 0 50px 100px rgba(50, 50, 93, .15), 0 15px 35px rgba(50, 50, 93, .2), 0 5px 15px rgba(0, 0, 0, .12);
+	height: auto;
+	border-radius: 15px;
+	margin-bottom: 60px;
+}
+
+@media(min-width: 992px) {
+	m-lg-4 {
+		margin: 1.5rem!important;
+	}
+}
+
+.section-title {
+    font-size: 1.7em;
+    color: #525f7f;
+    font-weight: 500;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.section-title::after {
+    margin: 25px auto 0px auto;
+    width: 60px;
+    border-top: 10px solid #F6577A;
+    display: block;
+    content: "";
+}
