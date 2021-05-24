@@ -29,17 +29,17 @@
                 );
                 $work_samples = new WP_Query( $args );
                 if($work_samples->have_posts()){ ?>
-                <div class="projects-container" id="projects">
-                    <h2 class="text-center m-2 pb-5">Projects</h2>
+                <div class="projects-container container-fluid p-5" id="projects">
+			<div class="section-title m-2 pb-5">
+				<h2 class="text-center">Projects</h2>
+			</div>
+			<div class="row justify-content-center">
                     <?php while( $work_samples->have_posts() ) : $work_samples->the_post();  ?>
-                        <div class="row m-2">
-                            <div class="col project-card p-0">
+                            <div class="col-lg-5 col-md-12 project-card p-0 m-lg-4">
                                 <?php 
                                     $image = get_field( 'image', get_the_ID() );
                                     if( $image ) : ?>
-                                        <div class="project-img">
-                                            <img src="<?php echo $image ?>"></img>
-                                        </div>
+                                        <img class="project-img" src="<?php echo $image ?>"></img>
                                     <?php endif; ?>
                                 <div class="project-body p-3">
                                     <?php the_title( '<div class="project-title"><h3>', '</h3></div>' ); ?>
