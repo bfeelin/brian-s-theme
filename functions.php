@@ -50,6 +50,44 @@ function brians_theme_scripts() {
 }
 add_action('wp_enqueue_scripts', 'brians_theme_scripts');  
 
+function wpb_hook_javascript() {
+    ?>
+        <script>
+			var i = 0;
+			var j = 0;
+			var k = 0;
+			var txt = "Hi, I'm Brain";
+			var correction = "ian";
+			var speed = 50;
+			function typeWriter() {
+
+
+			  if (i < txt.length) {
+				document.getElementById("name").innerHTML += txt.charAt(i);
+				i++;
+				setTimeout(typeWriter, speed);
+			  }
+
+			  if(j < correction.length){
+				setTimeout(function(){
+				  currentText = document.getElementById("name").innerHTML;
+				  document.getElementById("name").innerHTML = currentText.slice(0, currentText.length - 1);
+				}, 1000);
+				j++;
+			  }
+
+			  if (k < correction.length) {
+				setTimeout(function(){
+				  document.getElementById("name").innerHTML += correction.charAt(k++);
+				},1750);
+			  }
+
+			}
+        </script>
+    <?php
+}
+add_action('wp_head', 'wpb_hook_javascript');
+
 add_action( 'after_setup_theme', function() {
 	add_theme_support( 'title-tag' );
 	remove_all_filters( 'wp_title' );
