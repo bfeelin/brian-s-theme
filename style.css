@@ -297,3 +297,27 @@ a.terminal {
     font-size: .85em;
     color: #525f7f;
 }
+
+.gif-wrapper{
+	justify-content: center;
+}
+
+.project-gif{
+	border-radius: 15px 15px 0 0;
+	height:400px;
+}
+
+.project-img{
+	border-radius: 15px 15px 0 0;
+    height: 400px;
+	width: 100%;
+    object-fit: cover;
+}
+@media(max-width: 767px) {
+	.project-img{
+		border-radius: 15px 15px 0 0;
+		height: 200px;
+		object-fit: contain;
+	}
+}
+
